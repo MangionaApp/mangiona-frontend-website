@@ -1,0 +1,460 @@
+* { padding: 0;
+    margin: 0;
+    box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { font-family: 'Open Sans', 'Manrope', arial, sans-serif;
+    background-color: #fafafa; }
+header { position: sticky !important; top: 0 !important; z-index: 1000 !important;  padding: 4px 20px;
+    margin-top: 30px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: #fff;
+    width: 100%; }
+nav { display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: nowrap; }
+.cart-container { position: relative;
+    display: inline-block; }
+.cart-icon { font-size: 30px;
+    cursor: pointer; }
+.cart-count2 { display: none;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    font-size: 12px; }
+.mangiona-nav-links { display: flex;
+    flex-wrap: nowrap; }
+.mangiona-nav-links ul { display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    gap: 20px;
+    flex-wrap: nowrap; }
+.mangiona-nav-links a { text-decoration: none;
+    color: #1A1A1A;
+    font-weight: 500;
+    font-size: 16px;
+    flex-wrap: nowrap; }
+.mangiona-nav-links .active { color: #FF6B00;
+    font-weight: 700;
+    font-size: 18px; }
+.order-btn { padding: 10px 20px;
+    background-color: #FF6B00;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 16px;
+    transition: background-color 0.3s; }
+.order-btn:hover { background-color: #E05E00; }
+.mobile-nav-toggle, .mobile-nav-close { display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 5px; }
+@media (max-width: 900px) { header { position: sticky !important; top: 0 !important; z-index: 1000 !important;  padding: 0px 20px; }
+.mangiona-nav-links { position: fixed;
+        top: 0;
+        right: -100%;
+        width: 250px;
+        height: 100vh;
+        background-color: #fff;
+        flex-direction: column;
+        padding-top: 80px;
+        transition: right 0.3s ease;
+        box-shadow: -2px 0 10px rgba(0,0,0,0.1);
+        z-index: 1001; }
+.mangiona-nav-links.active { right: 0; }
+.mangiona-nav-links ul { flex-direction: column;
+        gap: 30px;
+        width: 100%; }
+.mobile-nav-toggle, .mobile-nav-close { display: block; }
+.mobile-nav-close { position: absolute;
+        top: 20px;
+        right: 20px; }
+.mangiona-order { display: flex;
+        align-items: center;
+        gap: 15px; }
+ }
+.cd-contact-page { padding: 60px 20px 100px;
+    background-color: #fafafa;
+    min-height: 80vh; }
+.cd-contact-header {  text-align: center;
+    margin-bottom: 50px; }
+.cd-contact-header h1 { font-size: 40px;
+    font-weight: 800;
+    color: #111;
+    margin-bottom: 15px; }
+.cd-contact-header p { font-size: 16px;
+    color: #555;
+    max-width: 500px;
+    margin: 0 auto;
+    line-height: 1.6; }
+.cd-contact-container { max-width: 1100px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 350px;
+    gap: 40px;
+    align-items: start; }
+.cd-form-card { background: #fff;
+    border-radius: 16px;
+    border: 1px solid #eaeaea;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.03);
+    padding: 40px; }
+.cd-form-card h2 { font-size: 24px;
+    font-weight: 700;
+    color: #111;
+    margin-bottom: 30px; }
+.cd-contact-form { display: flex;
+    flex-direction: column;
+    gap: 20px; }
+.cd-input-group { display: flex;
+    flex-direction: column;
+    gap: 8px; }
+.cd-input-group label { font-size: 14px;
+    font-weight: 600;
+    color: #333; }
+.cd-input-group input, 
+.cd-input-group textarea { padding: 16px;
+    border: 1px solid #eaeaea;
+    border-radius: 12px;
+    font-size: 13.5px;
+    font-family: inherit;
+    outline: none;
+    transition: all 0.2s ease;
+    background-color: #fafafa; }
+.cd-input-group input:focus, 
+.cd-input-group textarea:focus { border-color: #FF6B00;
+    background-color: #fff;
+    box-shadow: 0 0 0 3px rgba(4, 120, 87, 0.1); }
+.cd-input-group textarea { resize: vertical; }
+.cd-submit-btn { margin-top: 10px;
+    padding: 18px;
+    background-color: #FF6B00;
+    color: #fff;
+    border: none;
+    border-radius: 999px;
+    font-weight: 700;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.1s; }
+.cd-submit-btn:hover { background-color: #E05E00; }
+.cd-submit-btn:active { transform: scale(0.98); }
+.cd-contact-right { display: flex;
+    flex-direction: column;
+    gap: 20px; }
+.cd-info-card { background: #fff;
+    border-radius: 16px;
+    border: 1px solid #eaeaea;
+    padding: 24px;
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.02);
+    transition: transform 0.2s ease; }
+.cd-info-card:hover { transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.05); }
+.cd-icon-wrap { width: 48px;
+    height: 48px;
+    border-radius: 12px;
+    background: #fff5f3;
+    color: #FF6B00;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0; }
+.cd-info-text h3 { font-size: 16px;
+    font-weight: 700;
+    color: #111;
+    margin-bottom: 6px; }
+.cd-info-text p { font-size: 14px;
+    color: #555;
+    line-height: 1.5; }
+.cd-social-card { background: #fff;
+    border-radius: 16px;
+    border: 1px solid #eaeaea;
+    padding: 24px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.02);
+    text-align: center; }
+.cd-social-card h3 { font-size: 16px;
+    font-weight: 700;
+    color: #111;
+    margin-bottom: 16px; }
+.cd-social-links { display: flex;
+    justify-content: center;
+    gap: 15px; }
+.cd-social-icon { width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: #fafafa;
+    color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    border: 1px solid #eaeaea;
+    transition: all 0.2s ease; }
+.cd-social-icon:hover { background: #FF6B00;
+    color: #fff;
+    border-color: #FF6B00;
+    transform: translateY(-2px); }
+@media (max-width: 900px) { .cd-contact-container { grid-template-columns: 1fr; }
+.cd-form-card { padding: 24px; }
+ }
+
+
+/* High-Specificity Master Hero Badge Positioning - Zero Overlap with Driver Image */
+.home-delivery-visual .floating-badge.badge-1,
+.home-delivery-visual .courier-badge,
+.badge-1,
+.courier-badge {
+    top: -48px !important;
+    left: -40px !important;
+    right: auto !important;
+    bottom: auto !important;
+    z-index: 20 !important;
+}
+
+.home-delivery-visual .floating-badge.badge-2,
+.home-delivery-visual .delivery-time-badge,
+.badge-2,
+.delivery-time-badge {
+    bottom: -28px !important;
+    right: -40px !important;
+    top: auto !important;
+    left: auto !important;
+    z-index: 20 !important;
+}
+
+@media (max-width: 980px) {
+    .home-delivery-visual .floating-badge.badge-1,
+    .home-delivery-visual .courier-badge,
+    .badge-1,
+    .courier-badge {
+        top: -40px !important;
+        left: -20px !important;
+        right: auto !important;
+        bottom: auto !important;
+        padding: 8px 14px !important;
+    }
+    .home-delivery-visual .floating-badge.badge-2,
+    .home-delivery-visual .delivery-time-badge,
+    .badge-2,
+    .delivery-time-badge {
+        bottom: -24px !important;
+        right: -20px !important;
+        top: auto !important;
+        left: auto !important;
+        padding: 8px 14px !important;
+    }
+}
+
+@media (max-width: 640px) {
+    .home-delivery-visual {
+        width: min(280px, 75vw) !important;
+        height: 300px !important;
+        margin: 35px auto !important;
+        overflow: visible !important;
+    }
+    .home-delivery-visual .floating-badge.badge-1,
+    .home-delivery-visual .courier-badge,
+    .badge-1,
+    .courier-badge {
+        top: -38px !important;
+        left: -15px !important;
+        right: auto !important;
+        bottom: auto !important;
+        padding: 7px 11px !important;
+        box-shadow: 0 8px 24px rgba(0,0,0,0.15) !important;
+    }
+    .home-delivery-visual .floating-badge.badge-2,
+    .home-delivery-visual .delivery-time-badge,
+    .badge-2,
+    .delivery-time-badge {
+        bottom: -25px !important;
+        right: -15px !important;
+        top: auto !important;
+        left: auto !important;
+        padding: 7px 11px !important;
+        box-shadow: 0 8px 24px rgba(0,0,0,0.15) !important;
+    }
+}
+
+
+/* Master Rounded Floating Navbar */
+header {
+    position: sticky !important;
+    top: 12px !important;
+    z-index: 1000 !important;
+    margin: 12px auto !important;
+    width: calc(100% - 48px) !important;
+    max-width: 1280px !important;
+    padding: 8px 24px !important;
+    border-radius: 999px !important;
+    background: rgba(255, 255, 255, 0.94) !important;
+    backdrop-filter: blur(20px) !important;
+    -webkit-backdrop-filter: blur(20px) !important;
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.08), 0 0 0 1px rgba(255, 255, 255, 0.6) !important;
+    border: 1px solid rgba(0, 0, 0, 0.05) !important;
+    transition: all 0.3s ease !important;
+}
+
+@media (max-width: 992px) {
+    header {
+        top: 8px !important;
+        margin: 8px auto !important;
+        width: calc(100% - 24px) !important;
+        padding: 8px 16px !important;
+        border-radius: 20px !important;
+    }
+}
+
+/* Reduced Font & Unbolded Address Input & Address Labels */
+.hero-address-form input,
+#heroDeliveryAddress,
+.delivery-address,
+.address-text,
+.footer-contact-address {
+    font-size: 13px !important;
+    font-weight: 500 !important;
+    color: #475569 !important;
+}
+
+
+/* Master Rounded Floating Pill Navbar Design */
+header {
+    position: sticky !important;
+    top: 12px !important;
+    z-index: 1000 !important;
+    margin: 12px auto !important;
+    width: calc(100% - 48px) !important;
+    max-width: 1280px !important;
+    padding: 10px 28px !important;
+    border-radius: 999px !important;
+    background: rgba(255, 255, 255, 0.94) !important;
+    backdrop-filter: blur(20px) !important;
+    -webkit-backdrop-filter: blur(20px) !important;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08), 0 0 0 1px rgba(255, 255, 255, 0.7) !important;
+    border: 1px solid rgba(0, 0, 0, 0.05) !important;
+    transition: all 0.3s ease !important;
+}
+
+header nav {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    gap: 16px !important;
+}
+
+.mangiona-nav-links ul,
+.nav-links {
+    display: flex !important;
+    align-items: center !important;
+    gap: 6px !important;
+    background: rgba(241, 245, 249, 0.6) !important;
+    padding: 5px 8px !important;
+    border-radius: 999px !important;
+    border: 1px solid rgba(226, 232, 240, 0.8) !important;
+}
+
+.mangiona-nav-links a,
+.nav-link {
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    padding: 8px 18px !important;
+    border-radius: 999px !important;
+    font-size: 13.5px !important;
+    font-weight: 600 !important;
+    color: #334155 !important;
+    background: transparent !important;
+    box-shadow: none !important;
+    transition: all 0.25s ease !important;
+    text-decoration: none !important;
+    white-space: nowrap !important;
+}
+
+.mangiona-nav-links a:hover,
+.nav-link:hover {
+    color: #FF6B00 !important;
+    background: rgba(255, 107, 0, 0.08) !important;
+    border-radius: 999px !important;
+}
+
+.mangiona-nav-links a.active,
+.nav-link.active {
+    background: #FF6B00 !important;
+    color: #FFFFFF !important;
+    font-weight: 750 !important;
+    border-radius: 999px !important;
+    box-shadow: 0 4px 14px rgba(255, 107, 0, 0.35) !important;
+}
+
+.mangiona-order .order-btn,
+.order-btn {
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 6px !important;
+    padding: 9px 22px !important;
+    border-radius: 999px !important;
+    font-size: 13.5px !important;
+    font-weight: 800 !important;
+    background: #FF6B00 !important;
+    color: #FFFFFF !important;
+    border: none !important;
+    box-shadow: 0 4px 14px rgba(255, 107, 0, 0.35) !important;
+    transition: all 0.25s ease !important;
+    cursor: pointer !important;
+}
+
+.mangiona-order .order-btn:hover,
+.order-btn:hover {
+    transform: translateY(-2px) !important;
+    box-shadow: 0 6px 20px rgba(255, 107, 0, 0.45) !important;
+}
+
+.cart-container {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    width: 42px !important;
+    height: 42px !important;
+    border-radius: 50% !important;
+    background: #F8FAFC !important;
+    border: 1px solid #E2E8F0 !important;
+    transition: all 0.25s ease !important;
+    cursor: pointer !important;
+}
+
+.cart-container:hover {
+    background: #F1F5F9 !important;
+    border-color: #CBD5E1 !important;
+}
+
+.mobile-nav-toggle {
+    border-radius: 50% !important;
+    width: 42px !important;
+    height: 42px !important;
+}
+
+@media (max-width: 992px) {
+    header {
+        top: 8px !important;
+        margin: 8px auto !important;
+        width: calc(100% - 24px) !important;
+        padding: 8px 18px !important;
+        border-radius: 999px !important;
+    }
+}

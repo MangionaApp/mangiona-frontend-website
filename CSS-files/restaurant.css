@@ -1,0 +1,388 @@
+﻿
+.chowdeck-hero { display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    padding: 80px 10%;
+    text-align: center;
+    background: linear-gradient(135deg, rgba(4, 120, 87,0.05) 0%, rgba(253,199,41,0.05) 100%);
+    border-radius: 40px;
+    margin-left: 20px;
+    margin-right: 20px; }
+.hero-content { animation: floatAnim 1s ease-out forwards;
+    max-width: 800px; }
+.hero-content h1 { font-size: 65px;
+    font-weight: 800;
+    color: #111;
+    line-height: 1.1;
+    letter-spacing: -1px; }
+.hero-content p { font-size: 20px;
+    margin-top: 25px;
+    font-weight: 400;
+    color: #444; }
+.input-box { margin-top: 50px;
+    background-color: #fff;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.08);
+    padding: 10px 10px 10px 20px;
+    border-radius: 999px;
+    width: 100%;
+    max-width: 600px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid rgba(0,0,0,0.03); }
+.search-icon { font-size: 24px;
+    color: #FF6B00; }
+.input-box input { outline: none;
+    border: none;
+    flex: 1;
+    font-size: 16px;
+    background: transparent;
+    font-weight: 500; }
+.search-btn { background-color: #FF6B00;
+    color: #fff;
+    border: none;
+    padding: 16px 35px;
+    border-radius: 999px;
+    font-weight: 700;
+    font-size: 16px;
+    cursor: pointer;
+    transition: transform 0.2s, background-color 0.2s; }
+.search-btn:hover { background-color: #E05E00;
+    transform: scale(1.05); }
+.sub-hero { width: 100%;
+    margin-top: 40px;
+    padding: 0 20px; }
+.mangiona-offer { background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url("../image/restaurant_offer_banner.png");
+    width: 100%;
+    height: 400px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 40px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.15); }
+.restaurant-list { text-align: center;
+    margin-top: 100px;
+    padding: 0 20px; }
+.restaurant-list h3 { color: #FF6B00;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    text-transform: uppercase; }
+.restaurant-list h2 { margin-top: 10px;
+    font-size: 45px;
+    font-weight: 800;
+    letter-spacing: -1px; }
+.restaurant-list p { margin-top: 15px;
+    font-size: 18px;
+    color: #666;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.6; }
+.chowdeck-grid { display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 30px;
+    margin-top: 30px;
+    padding-bottom: 80px; }
+.vendor-card { text-decoration: none;
+    color: inherit;
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0px 8px 25px rgba(0,0,0,0.06);
+    transition: all 0.3s ease;
+    border: 1px solid rgba(0,0,0,0.03);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    text-align: left; }
+.vendor-card:hover { transform: translateY(-6px);
+    box-shadow: 0px 15px 35px rgba(255, 107, 0, 0.15); }
+.card-header {  width: 100%;
+    height: 200px;
+    position: relative; }
+.card-header img { width: 100%;
+    height: 100%;
+    object-fit: cover; }
+.rating-pill { position: absolute;
+    top: 15px;
+    right: 15px;
+    background: #fff;
+    padding: 6px 12px;
+    border-radius: 999px;
+    font-size: 14px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    color: #333; }
+.rating-pill iconify-icon { color: #f59e0b;
+    font-size: 16px; }
+.card-body { padding: 20px; }
+.card-body h5 { font-size: 20px;
+    font-weight: 700;
+    color: #111;
+    margin-bottom: 12px; }
+.icon { display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #666; }
+.icon iconify-icon { color: #FF6B00;
+    font-size: 18px; }
+.icon .p { font-size: 14px;
+    font-weight: 500; }
+@media (max-width: 900px) { .hero-content h1 { font-size: 45px; }
+.input-box { flex-direction: column;
+        border-radius: 20px;
+        padding: 15px; }
+.search-btn { width: 100%; }
+ }
+
+
+/* High-Specificity Master Hero Badge Positioning - Zero Overlap with Driver Image */
+.home-delivery-visual .floating-badge.badge-1,
+.home-delivery-visual .courier-badge,
+.badge-1,
+.courier-badge {
+    top: -48px !important;
+    left: -40px !important;
+    right: auto !important;
+    bottom: auto !important;
+    z-index: 20 !important;
+}
+
+.home-delivery-visual .floating-badge.badge-2,
+.home-delivery-visual .delivery-time-badge,
+.badge-2,
+.delivery-time-badge {
+    bottom: -28px !important;
+    right: -40px !important;
+    top: auto !important;
+    left: auto !important;
+    z-index: 20 !important;
+}
+
+@media (max-width: 980px) {
+    .home-delivery-visual .floating-badge.badge-1,
+    .home-delivery-visual .courier-badge,
+    .badge-1,
+    .courier-badge {
+        top: -40px !important;
+        left: -20px !important;
+        right: auto !important;
+        bottom: auto !important;
+        padding: 8px 14px !important;
+    }
+    .home-delivery-visual .floating-badge.badge-2,
+    .home-delivery-visual .delivery-time-badge,
+    .badge-2,
+    .delivery-time-badge {
+        bottom: -24px !important;
+        right: -20px !important;
+        top: auto !important;
+        left: auto !important;
+        padding: 8px 14px !important;
+    }
+}
+
+@media (max-width: 640px) {
+    .home-delivery-visual {
+        width: min(280px, 75vw) !important;
+        height: 300px !important;
+        margin: 35px auto !important;
+        overflow: visible !important;
+    }
+    .home-delivery-visual .floating-badge.badge-1,
+    .home-delivery-visual .courier-badge,
+    .badge-1,
+    .courier-badge {
+        top: -38px !important;
+        left: -15px !important;
+        right: auto !important;
+        bottom: auto !important;
+        padding: 7px 11px !important;
+        box-shadow: 0 8px 24px rgba(0,0,0,0.15) !important;
+    }
+    .home-delivery-visual .floating-badge.badge-2,
+    .home-delivery-visual .delivery-time-badge,
+    .badge-2,
+    .delivery-time-badge {
+        bottom: -25px !important;
+        right: -15px !important;
+        top: auto !important;
+        left: auto !important;
+        padding: 7px 11px !important;
+        box-shadow: 0 8px 24px rgba(0,0,0,0.15) !important;
+    }
+}
+
+
+/* Master Rounded Floating Navbar */
+header {
+    position: sticky !important;
+    top: 12px !important;
+    z-index: 1000 !important;
+    margin: 12px auto !important;
+    width: calc(100% - 48px) !important;
+    max-width: 1280px !important;
+    padding: 8px 24px !important;
+    border-radius: 999px !important;
+    background: rgba(255, 255, 255, 0.94) !important;
+    backdrop-filter: blur(20px) !important;
+    -webkit-backdrop-filter: blur(20px) !important;
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.08), 0 0 0 1px rgba(255, 255, 255, 0.6) !important;
+    border: 1px solid rgba(0, 0, 0, 0.05) !important;
+    transition: all 0.3s ease !important;
+}
+
+@media (max-width: 992px) {
+    header {
+        top: 8px !important;
+        margin: 8px auto !important;
+        width: calc(100% - 24px) !important;
+        padding: 8px 16px !important;
+        border-radius: 20px !important;
+    }
+}
+
+/* Reduced Font & Unbolded Address Input & Address Labels */
+.hero-address-form input,
+#heroDeliveryAddress,
+.delivery-address,
+.address-text,
+.footer-contact-address {
+    font-size: 13px !important;
+    font-weight: 500 !important;
+    color: #475569 !important;
+}
+
+
+/* Master Rounded Floating Pill Navbar Design */
+header {
+    position: sticky !important;
+    top: 12px !important;
+    z-index: 1000 !important;
+    margin: 12px auto !important;
+    width: calc(100% - 48px) !important;
+    max-width: 1280px !important;
+    padding: 10px 28px !important;
+    border-radius: 999px !important;
+    background: rgba(255, 255, 255, 0.94) !important;
+    backdrop-filter: blur(20px) !important;
+    -webkit-backdrop-filter: blur(20px) !important;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08), 0 0 0 1px rgba(255, 255, 255, 0.7) !important;
+    border: 1px solid rgba(0, 0, 0, 0.05) !important;
+    transition: all 0.3s ease !important;
+}
+
+header nav {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    gap: 16px !important;
+}
+
+.mangiona-nav-links ul,
+.nav-links {
+    display: flex !important;
+    align-items: center !important;
+    gap: 6px !important;
+    background: rgba(241, 245, 249, 0.6) !important;
+    padding: 5px 8px !important;
+    border-radius: 999px !important;
+    border: 1px solid rgba(226, 232, 240, 0.8) !important;
+}
+
+.mangiona-nav-links a,
+.nav-link {
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    padding: 8px 18px !important;
+    border-radius: 999px !important;
+    font-size: 13.5px !important;
+    font-weight: 600 !important;
+    color: #334155 !important;
+    background: transparent !important;
+    box-shadow: none !important;
+    transition: all 0.25s ease !important;
+    text-decoration: none !important;
+    white-space: nowrap !important;
+}
+
+.mangiona-nav-links a:hover,
+.nav-link:hover {
+    color: #FF6B00 !important;
+    background: rgba(255, 107, 0, 0.08) !important;
+    border-radius: 999px !important;
+}
+
+.mangiona-nav-links a.active,
+.nav-link.active {
+    background: #FF6B00 !important;
+    color: #FFFFFF !important;
+    font-weight: 750 !important;
+    border-radius: 999px !important;
+    box-shadow: 0 4px 14px rgba(255, 107, 0, 0.35) !important;
+}
+
+.mangiona-order .order-btn,
+.order-btn {
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 6px !important;
+    padding: 9px 22px !important;
+    border-radius: 999px !important;
+    font-size: 13.5px !important;
+    font-weight: 800 !important;
+    background: #FF6B00 !important;
+    color: #FFFFFF !important;
+    border: none !important;
+    box-shadow: 0 4px 14px rgba(255, 107, 0, 0.35) !important;
+    transition: all 0.25s ease !important;
+    cursor: pointer !important;
+}
+
+.mangiona-order .order-btn:hover,
+.order-btn:hover {
+    transform: translateY(-2px) !important;
+    box-shadow: 0 6px 20px rgba(255, 107, 0, 0.45) !important;
+}
+
+.cart-container {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    width: 42px !important;
+    height: 42px !important;
+    border-radius: 50% !important;
+    background: #F8FAFC !important;
+    border: 1px solid #E2E8F0 !important;
+    transition: all 0.25s ease !important;
+    cursor: pointer !important;
+}
+
+.cart-container:hover {
+    background: #F1F5F9 !important;
+    border-color: #CBD5E1 !important;
+}
+
+.mobile-nav-toggle {
+    border-radius: 50% !important;
+    width: 42px !important;
+    height: 42px !important;
+}
+
+@media (max-width: 992px) {
+    header {
+        top: 8px !important;
+        margin: 8px auto !important;
+        width: calc(100% - 24px) !important;
+        padding: 8px 18px !important;
+        border-radius: 999px !important;
+    }
+}
