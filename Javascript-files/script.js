@@ -404,8 +404,13 @@ function createCartRow(item) {
     removeButton.className = 'remove-btn2';
     removeButton.type = 'button';
     removeButton.setAttribute('onclick', 'removeItem(this)');
-    removeButton.textContent = '-';
     removeButton.style.display = 'block';
+
+    const removeIcon = document.createElement('iconify-icon');
+    removeIcon.setAttribute('icon', 'akar-icons:minus');
+    removeIcon.setAttribute('width', '18');
+    removeIcon.setAttribute('height', '18');
+    removeButton.appendChild(removeIcon);
 
     actions.appendChild(addButton);
     actions.appendChild(quantity);
