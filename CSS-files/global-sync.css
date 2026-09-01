@@ -257,7 +257,7 @@ footer { position: relative; }
     margin-top: 5px;
     font-size: 15px;
     color: gray;
-    border: 1px solid gray; }
+    border: 1px solid black; }
 .cart-items h2 { font-size: 13.5px;
     font-weight: 600;
     margin-top: 20px; }
@@ -310,9 +310,9 @@ footer { position: relative; }
         width: 100%; }
  }
 button, .btn, .action-btn, .order-btn, .update-btn, .checkout-btn, .filter-btn, .tab-btn, .page-btn, .add-btn2, .remove-btn2 { transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.3s ease, filter 0.3s ease, background-color 0.3s ease !important; }
-button:hover, .btn:hover, .action-btn:hover, .order-btn:hover:hover, .update-btn:hover, .checkout-btn:hover, .filter-btn:hover, .tab-btn:hover, .page-btn:hover:hover, .add-btn2:hover, .remove-btn2:hover { transform: translateY(-4px) scale(1.02) !important;
+button:hover, .btn:hover, .action-btn:hover, .order-btn:hover:hover, .update-btn:hover, .checkout-btn:hover, .filter-btn:hover, .tab-btn:hover, .page-btn:hover:hover, .add-btn2:hover { transform: translateY(-4px) scale(1.02) !important;
     box-shadow: 0 10px 20px rgba(255, 107, 0, 0.25) !important;
-    background-color: #fff !important; }
+    background-color: #f7431b !important; }
 button:active, .btn:active, .action-btn:active, .order-btn:active:active, .update-btn:active, .checkout-btn:active, .filter-btn:active, .tab-btn:active, .page-btn:active:active, .add-btn2:active, .remove-btn2:active { transform: translateY(1px) scale(0.98) !important;
     box-shadow: 0 3px 10px rgba(255, 107, 0, 0.15) !important;
     background-color: #C44F00 !important; }
