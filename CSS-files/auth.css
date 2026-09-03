@@ -43,7 +43,7 @@ body { background-color: #fafafa; }
     background: #fafafa;
     transition: all 0.2s ease; }
 .cd-input:focus { outline: none;
-    border-color: #FF6B00;
+    border-color: #f02b01;
     background: #fff;
     box-shadow: 0 0 0 3px rgba(4, 120, 87, 0.1); }
 .cd-password-wrapper { position: relative;
@@ -55,21 +55,21 @@ body { background-color: #fafafa; }
     color: #888;
     cursor: pointer;
     transition: color 0.2s; }
-.cd-password-wrapper .eye-icon:hover { color: #FF6B00; }
+.cd-password-wrapper .eye-icon:hover { color: #f02b01; }
 .cd-auth-terms { display: flex;
     align-items: center;
     gap: 10px;
     margin-top: 5px; }
 .cd-auth-terms input[type="checkbox"] { width: 18px;
     height: 18px;
-    accent-color: #FF6B00;
+    accent-color: #f02b01;
     cursor: pointer; }
 .cd-auth-terms label { font-size: 14px;
     color: #555; }
-.cd-auth-terms a { color: #FF6B00;
+.cd-auth-terms a { color: #f02b01;
     text-decoration: none;
     font-weight: 600; }
-.cd-auth-submit { background: #FF6B00;
+.cd-auth-submit { background: #f02b01;
     color: #fff;
     border: none;
     padding: 16px;
@@ -114,7 +114,7 @@ body { background-color: #fafafa; }
     margin-top: 25px;
     font-size: 13.5px;
     color: #555; }
-.cd-auth-switch a { color: #FF6B00;
+.cd-auth-switch a { color: #f02b01;
     font-weight: 700;
     text-decoration: none;
     margin-left: 5px; }

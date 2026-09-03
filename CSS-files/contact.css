@@ -169,7 +169,7 @@ nav { display: flex;
     height: 48px;
     border-radius: 12px;
     background: #fff5f3;
-    color: #FF6B00;
+    color: #f02b01;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -205,9 +205,9 @@ nav { display: flex;
     text-decoration: none;
     border: 1px solid #eaeaea;
     transition: all 0.2s ease; }
-.cd-social-icon:hover { background: #FF6B00;
+.cd-social-icon:hover { background: #f02b01;
     color: #fff;
-    border-color: #FF6B00;
+    border-color: #f02b01;
     transform: translateY(-2px); }
 @media (max-width: 900px) { .cd-contact-container { grid-template-columns: 1fr; }
 .cd-form-card { padding: 24px; }

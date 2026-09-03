@@ -86,7 +86,7 @@
     border: 1px solid #e6e6e6;
     font-size: 14px; }
 .search-group button { border: none;
-    background: #FF6B00;
+    background: #f02b01;
     color: #fff;
     padding: 0 16px;
     border-radius: 14px;
@@ -104,7 +104,7 @@
     color: #5d5d5d;
     background: #faf8f6;
     font-size: 14px; }
-.categories-list li.active { background: #FF6B00;
+.categories-list li.active { background: #f02b01;
     color: #fff; }
 .recent-item { display: flex;
     gap: 14px;
@@ -149,7 +149,7 @@
     min-width: 46px;
     cursor: pointer; }
 .page-btn.active,
-.page-btn:hover { background: #FF6B00;
+.page-btn:hover { background: #f02b01;
     color: #fff;
     border-color: transparent; }
 @media (max-width: 1080px) { .blog-main { flex-direction: column;

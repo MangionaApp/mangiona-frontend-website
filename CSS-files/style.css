@@ -305,7 +305,7 @@ nav { display: flex;
     padding: 5px 12px;
     border-radius: 999px;
     background: #fef0ec;
-    color: #FF6B00;
+    color: #f02b01;
     font-size: 12px;
     font-weight: 700;
     margin-bottom: 14px; }
@@ -322,7 +322,7 @@ nav { display: flex;
 .read-more { display: inline-flex;
     align-items: center;
     gap: 8px;
-    color: #FF6B00;
+    color: #f02b01;
     font-weight: 700; }
 .blog-sidebar { flex: 1;
     display: flex;
@@ -344,7 +344,7 @@ nav { display: flex;
     border: 1px solid #e6e6e6;
     font-size: 14px; }
 .search-group button { border: none;
-    background: #FF6B00;
+    background: #f02b01;
     color: #fff;
     padding: 0 16px;
     border-radius: 14px;
@@ -362,7 +362,7 @@ nav { display: flex;
     color: #5d5d5d;
     background: #faf8f6;
     font-size: 14px; }
-.categories-list li.active { background: #FF6B00;
+.categories-list li.active { background: #f02b01;
     color: #fff; }
 .recent-item { display: flex;
     gap: 14px;
@@ -386,7 +386,7 @@ nav { display: flex;
     border: 1px solid #e6e6e6;
     font-size: 14px; }
 .subscribe button { border: none;
-    background: #FF6B00;
+    background: #f02b01;
     color: #fff;
     padding: 14px 16px;
     border-radius: 14px;
@@ -407,7 +407,7 @@ nav { display: flex;
     min-width: 46px;
     cursor: pointer; }
 .page-btn.active,
-.page-btn:hover { background: #FF6B00;
+.page-btn:hover { background: #f02b01;
     color: #fff;
     border-color: transparent; }
 .icon-link { display: flex;

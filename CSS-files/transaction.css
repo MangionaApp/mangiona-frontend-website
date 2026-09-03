@@ -423,7 +423,7 @@ nav { display: flex;
     display: flex;
     align-items: center;
     gap: 10px; }
-.cd-card-header h3 iconify-icon { color: #FF6B00; }
+.cd-card-header h3 iconify-icon { color: #f02b01; }
 .cd-change-btn { background: transparent;
     border: none;
     color: #FF6B00;
@@ -457,11 +457,11 @@ nav { display: flex;
     transition: all 0.2s ease;
     background: #fff;
     text-align: center; }
-.cd-payment-option input[type="radio"]:checked ~ .cd-payment-box { border-color: #FF6B00;
+.cd-payment-option input[type="radio"]:checked ~ .cd-payment-box { border-color: #f02b01;
     background-color: #F0FDF4;
     box-shadow: 0 0 0 1px #FF6B00; }
 .cd-payment-option:hover .cd-payment-box { border-color: #ccc; }
-.wallet-payment-option .cd-payment-box iconify-icon { color: #FF6B00; }
+.wallet-payment-option .cd-payment-box iconify-icon { color: #f02b01; }
 .wallet-payment-option .cd-payment-box span { color: #111; font-size: 13px; font-weight: 700; }
 .wallet-option-balance { color: #64748b; font-size: 11px; font-weight: 600; }
 .wallet-panel { margin-top: 18px; padding: 18px; border: 1px solid #a7f3d0; border-radius: 14px; background: linear-gradient(135deg, #ecfdf5, #fef3c7); display: flex; align-items: center; justify-content: space-between; gap: 16px; }
@@ -526,7 +526,7 @@ nav { display: flex;
     font-size: 18px; }
 .cd-checkout-btn { width: 100%;
     padding: 16px;
-    background: #FF6B00;
+    background: #f02b01;
     color: #fff;
     border: none;
     border-radius: 999px;

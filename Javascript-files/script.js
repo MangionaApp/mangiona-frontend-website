@@ -27,7 +27,7 @@ function renderSharedFooter() {
           <p class="footer-summary">Fresh meals from restaurants you love, delivered quickly and reliably across Lagos.</p>
           <address class="footer-contact">
             <a href="https://maps.google.com/?q=11+Sampson+Ubani+Street+Aba+Abia+State" target="_blank" rel="noopener noreferrer"><iconify-icon icon="mdi:map-marker-outline"></iconify-icon><span>11 Sampson Ubani Street, Aba,<br>Abia State, Nigeria</span></a>
-            <a href="mailto:mangiona@gmail.com"><iconify-icon icon="mdi:email-outline"></iconify-icon><span>mangiona@gmail.com</span></a>
+            <a href="mailto:mangiona.app@gmail.com"><iconify-icon icon="mdi:email-outline"></iconify-icon><span>mangiona.app@gmail.com</span></a>
             <a href="tel:09021449487"><iconify-icon icon="mdi:phone-outline"></iconify-icon><span>09021449487</span></a>
           </address>
         </div>

@@ -2,7 +2,7 @@
     margin: 0;
     box-sizing: border-box; }
 html { scroll-behavior: smooth; }
-body { font-family: 'Open Sans', 'Manrope', arial, sans-serif;
+body { font-family: Manrope, sans-serif, arial, sans-serif;
     background-color: #fafafa; }
 header { position: sticky !important; top: 0 !important; z-index: 1000 !important;  padding: 4px 20px;
     margin-top: 30px;
@@ -124,7 +124,7 @@ nav { display: flex;
 .cd-banner-meta span { display: flex;
     align-items: center;
     gap: 6px; }
-.cd-banner-meta .icon-loc { color: #FF6B00;
+.cd-banner-meta .icon-loc { color: #f02b01;
     font-size: 18px; }
 .cd-banner-stats { display: flex;
     gap: 15px; }
@@ -137,7 +137,7 @@ nav { display: flex;
     gap: 12px; }
 .cd-stat-box iconify-icon { font-size: 24px; }
 .icon-star { color: #f5a623; }
-.icon-loc-red { color: #FF6B00; }
+.icon-loc-red { color: #f02b01; }
 .icon-time { color: #444; }
 .cd-stat-box p { font-size: 16px;
     font-weight: 700;
@@ -207,10 +207,11 @@ nav { display: flex;
     justify-content: space-between; }
 .cd-menu-price { font-size: 18px;
     font-weight: 800;
-    color: #FF6B00; }
+    color: #f02b01; }
 .cd-menu-actions { display: flex;
-    gap: 5px; }
-.cd-add-btn { background: #FF6B00;
+    align-items: center;
+    gap: 8px; }
+.cd-add-btn { background: #f02b01;
     color: white;
     border: none;
     padding: 8px 16px;
@@ -237,12 +238,14 @@ nav { display: flex;
     align-items: center;
     justify-content: center;
     color: #111;
-    width: 24px;
+    min-width: 52px;
     height: 24px;
     border-radius: 50%;
     font-size: 12px;
     font-weight: 700;
-    margin-left: 5px; }
+    margin: 0;
+    line-height: 1;
+    text-align: center; }
 .mangiona-news-letter { display: flex;
     background-color: #FF6B00;
     border-radius: 40px;
@@ -275,7 +278,7 @@ nav { display: flex;
     outline: none;
     font-size: 13.5px;
     border-radius: 999px 0 0 999px; }
-.update-btn { background: #FF6B00;
+.update-btn { background: #f02b01;
     color: white;
     border: none;
     padding: 15px 30px;

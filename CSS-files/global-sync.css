@@ -115,6 +115,11 @@ nav { display: flex;
     border-radius: 12px;
     background: #f02b01;
     color: #fff; }
+
+    .mobile-menu-btn{
+        display: none;
+    }
+
 .order-btn { background-color: #f02b01;
     color: #fff;
     padding: 7px 12px;
@@ -312,7 +317,7 @@ footer { position: relative; }
 button, .btn, .action-btn, .order-btn, .update-btn, .checkout-btn, .filter-btn, .tab-btn, .page-btn, .add-btn2, .remove-btn2 { transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.3s ease, filter 0.3s ease, background-color 0.3s ease !important; }
 button:hover, .btn:hover, .action-btn:hover, .order-btn:hover:hover, .update-btn:hover, .checkout-btn:hover, .filter-btn:hover, .tab-btn:hover, .page-btn:hover:hover, .add-btn2:hover { transform: translateY(-4px) scale(1.02) !important;
     box-shadow: 0 10px 20px rgba(255, 107, 0, 0.25) !important;
-    background-color: #f7431b !important; }
+    background-color: #f7431b !important; color: #fff !important;}
 button:active, .btn:active, .action-btn:active, .order-btn:active:active, .update-btn:active, .checkout-btn:active, .filter-btn:active, .tab-btn:active, .page-btn:active:active, .add-btn2:active, .remove-btn2:active { transform: translateY(1px) scale(0.98) !important;
     box-shadow: 0 3px 10px rgba(255, 107, 0, 0.15) !important;
     background-color: #C44F00 !important; }
@@ -784,7 +789,7 @@ input,
 .vendor-card:hover { transform: translateY(-6px);
     box-shadow: 0px 15px 35px rgba(255, 107, 0, 0.15); }
 .card-header {  width: 100%;
-    height: 200px;
+    height: 250px;
     position: relative; }
 .card-header img { width: 100%;
     height: 100%;
@@ -813,7 +818,7 @@ input,
     align-items: center;
     gap: 8px;
     color: #666; }
-.icon iconify-icon { color: #FF6B00;
+.icon iconify-icon { color: #f02b01;
     font-size: 18px; }
 .icon .p { font-size: 14px;
     font-weight: 500; }
@@ -1766,6 +1771,7 @@ h2 {
     overflow: hidden !important;
     box-shadow: 0 20px 45px rgba(4, 120, 87, 0.22) !important;
     border: 1px solid rgba(255, 255, 255, 0.15) !important;
+    min-height: 600px;
 }
 
 .mangiona-get-app .overlay {
@@ -1871,7 +1877,7 @@ h2 {
 }
 
 .faq-section h4 {
-    color: #FF6B00 !important;
+    color: #f02b01 !important;
     text-transform: uppercase !important;
     font-size: 13px !important;
     font-weight: 800 !important;
@@ -1921,7 +1927,7 @@ h2 {
 
 .faq-question .arrow {
     font-size: 24px !important;
-    color: #FF6B00 !important;
+    color: #f02b01 !important;
     transition: transform 0.3s ease !important;
     flex-shrink: 0 !important;
 }
