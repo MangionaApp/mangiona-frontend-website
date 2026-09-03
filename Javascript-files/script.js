@@ -839,6 +839,11 @@ function displayUserInNav() {
     try {
         const isLoggedIn = localStorage.getItem('isLoggedIn') === 'true';
         const user = getSavedUser();
+        const signUpButtons = document.querySelectorAll('.mangiona-order a[href="sign-up.html"]');
+
+        signUpButtons.forEach(button => {
+            button.hidden = isLoggedIn;
+        });
 
         if (!isLoggedIn || !user || !user.username) return;
 
