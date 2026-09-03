@@ -123,7 +123,7 @@ nav { display: flex;
   font-style: italic; }
 .delivery-address { padding: 8px;
   width: 50%;
-  outline: none; }
+  outline: none; border: 1px solid #f02b01 }
 .delivery-address.error { border: 1px solid #e74c3c;
         box-shadow: 0 0 0 3px rgba(231,76,60,0.06); }
 .address-btn { background-color: #FF6B00;

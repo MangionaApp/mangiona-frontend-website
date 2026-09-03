@@ -40,7 +40,7 @@ body {
 }
 
 .cd-track-title span {
-    color: #FF6B00;
+    color: #f02b01;
 }
 
 .cd-track-status-pill {
@@ -48,7 +48,7 @@ body {
     align-items: center;
     gap: 10px;
     background: #fff5f3;
-    color: #FF6B00;
+    color: #f02b01;
     padding: 10px 20px;
     border-radius: 999px;
     font-weight: 700;
@@ -59,7 +59,7 @@ body {
 .cd-pulse-dot {
     width: 10px;
     height: 10px;
-    background-color: #FF6B00;
+    background-color: #f02b01;
     border-radius: 50%;
     animation: pulse 1.5s infinite;
 }
@@ -145,7 +145,7 @@ body {
 }
 
 .cd-timeline-item.active .cd-timeline-icon {
-    background: #FF6B00;
+    background: #f02b01;
     box-shadow: 0 0 0 5px #fff5f3;
 }
 
@@ -189,7 +189,7 @@ body {
 
 .cd-summary-item iconify-icon {
     font-size: 24px;
-    color: #FF6B00;
+    color: #f02b01;
     background: #fff5f3;
     padding: 10px;
     border-radius: 12px;
